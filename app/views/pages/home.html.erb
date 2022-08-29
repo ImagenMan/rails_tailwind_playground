@@ -1,14 +1,5 @@
 <div class="container mx-auto pt-5">
 <h1>Pages#home</h1>
 <p class="text-base font-light leading-relaxed mt-5 mb-4">Find me in app/views/pages/home.html.erb</p>
-<%= content_tag(:div, "", data: {
-    controller: "counter"
-}) do %>
-<%= content_tag(:p, "Click the freekin' button man!", data: {
-    counter_target: "output"
-}) %>
-
-<%= render "layouts/button" %>
-
-<% end %>
+<%= render "layouts/counter_widget"%>
 </div>
